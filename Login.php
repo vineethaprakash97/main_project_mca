@@ -35,7 +35,7 @@ class Login extends CI_Controller{
                         $this->session->set_userdata("usertype",$usertype);
                         $this->session->set_userdata("username",$username);
                         if($usertype=="admin"){
-                            redirect("Dashboard/index");
+                            redirect("Village_recovery/admin_show_village_recovery");
                         }else{
                             redirect("Village_recovery/show_monthly_recovery");
                             
